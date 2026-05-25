@@ -7,9 +7,10 @@ const app = express()
 app.use(express.json())
 app.use(cors())
 
+require("dotenv").config()
 
-const BOT_TOKEN = "8029588619:AAGVnUpr9OQaH5SwrHJB7GzfZOdfrHYQsi0"
-const CHAT_ID = "-1003761096798"
+    const BOT_TOKEN = process.env.BOT_TOKEN
+    const CHAT_ID = process.env.CHAT_ID
 
 
 app.get("/", (req, res) => {
