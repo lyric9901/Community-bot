@@ -135,7 +135,7 @@ app.post("/verify", async (req, res) => {
             `https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`,
             {
                 chat_id: CHAT_ID,
-                text: `🔥 @${username} verified from button`
+                text: `Member @${username} of our crew is navigating a really tough wave right now. Let’s drop some 🌊 in the chat to remind them they aren't riding it alone.`
             }
         )
 
